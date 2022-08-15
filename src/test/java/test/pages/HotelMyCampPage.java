@@ -1,4 +1,4 @@
-package pages;
+package test.pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +10,7 @@ public class HotelMyCampPage {
     public HotelMyCampPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy (xpath = "//*[text()=\"Log in\"]")
+    @FindBy (xpath = "//a[text()=\"Log in\"]")
     public WebElement login;
 
     @FindBy(id = "UserName")
