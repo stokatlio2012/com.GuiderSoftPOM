@@ -13,6 +13,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TestBaseRapor01 {
+    //! burayı öğrencilere vereceğiz
 
         protected static ExtentReports extentReports; //extent report'a ilk atamayi yapar
         protected static ExtentTest extentTest; // test pass veya failed gibi bilgileri kaydeder. Ayrica ekran resmi icin de kullaniriz
@@ -32,7 +33,7 @@ public class TestBaseRapor01 {
         extentReports.setSystemInfo("Browser", ConfigurationReader.getProperty("browser")); // chrome, firefox
         extentReports.setSystemInfo("Automation Engineer", "GuiderSoft");
         extentHtmlReporter.config().setDocumentTitle("Son Test");
-        extentHtmlReporter.config().setReportName("Bu rapor çok güzel");
+        extentHtmlReporter.config().setReportName("Bu rapor çok önemli");
     }
         // Her test methodundan sonra eğer testte hata varsa, ekran görüntüsü alıp rapora ekliyor
         @AfterMethod(alwaysRun = true)
